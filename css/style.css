@@ -6,16 +6,19 @@
   --drak-grey-color: #4B4B4B; /* var(--drak-grey-color) */
 }
 
+
 body {
 	margin: 0;
-	display: flex;
-	justify-content: center;
+	padding: O;
+	/* display: flex;
+	justify-content: center; */
 }
 
-.container {
+/* .container {
 	min-width: 992px;
-	max-width: 1440px;
-}
+	max-width: 14440px;
+
+} */
 
 h2, 
 h3 {
@@ -107,16 +110,30 @@ p {
 
 
 /***************/
+/* .asso {
+	background-color: #FFFFFF;
+} */
 .directionRow {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	height: 250px;
+	width: 100%;
+	/* background-color: #FFFFFF; */
+
+}
+article {
+	margin-top: -30px;
 }
 
+.directionRow p {
+	color: black;
+}
 .directionColumn {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 }
 
 .sectionLinearGradientBackground {
@@ -157,6 +174,7 @@ p {
 	line-height: 17px;
 
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
@@ -185,4 +203,136 @@ p {
 .buttonHighlight:hover {
 	font-weight: 800;
 	border-width: 3px;
+}
+
+.photos-fondateurs {
+    background: linear-gradient(#CD487B 100%, #E44444 100%);
+    padding: 30px 15px;
+    text-align: center;
+}
+
+
+/* ------------------------------membres fondateurs */
+
+/* display flex pour aligner les elements côte à côte */
+.image-container {
+    display: flex;
+    justify-content: center; /* Mettre le centre de l'axe horizontal de l'écran en tant que point central */
+    align-items: center;
+    flex-wrap: wrap; /* Permettre à la ligne de se casser et d'ajouter les éléments suivants sur une nouvelle ligne */
+    margin-top: 15px;
+}
+/* flex direction agencer les elements dans le sens qu'on veut et colum pur les mettre en colonne cote à cote */
+.image-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px; /* Ajouter une marge autour de chaque image */
+}
+
+.image-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px; /* Ajouter de la marge en bas du titre */
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+
+}
+
+.image-container h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 25px;
+    line-height: 25px;
+    color: #FFFFFF;
+	font-family: archivo;
+	font-weight: 600;
+
+}
+
+.photos-fondateurs img {
+    width: 200px;
+    height: auto;
+}
+.photos-fondateurs h3, 
+p {
+	color: #FFFFFF;
+  }
+
+.photos-fondateurs p {
+	margin-top: 0px;
+	font-family: Archivo;
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 0em;
+
+}
+
+
+  h4 {
+	text-align: center; /* centre le texte horizontalement */
+	color: #E44545;
+	font-family: 'Archivo';
+font-style: normal;
+font-weight: 900;
+font-size: 35px;
+line-height: 38px;
+margin-top: 0px;
+
+}
+
+.directionColumn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+background-color: #EDEDED;
+/* margin-bottom: -160px; */
+
+  }
+  
+  .button {
+	margin: 20px 0px;
+	padding: 28px 40px;
+	background-color: rgb(247, 238, 238);
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-family: 'Archivo';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 17px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+
+  }
+  
+  .buttonDrakGreyColor {
+	background: #FFFFFF;
+	border: 2px solid #E44444;
+	border-radius: 38px;
+	color: #E44444 ;
+  }
+  
+.buttonLightGreyColor {
+	background: #FFFFFF;
+	border: 3px solid #CD487B;
+	border-radius: 38px;
+	color: #CD487B;
+	margin: 20px 0px;
+	padding: 28px 44px;
+}
+.cours {
+	background-color: #EDEDED;
+}
+footer {
+	height: 70px;
+	background-color: #EDEDED;
 }
